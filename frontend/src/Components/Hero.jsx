@@ -3,21 +3,24 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import tags from "/src/assets/HeroSecImages/Tags.jpg"
+import label from "/src/assets/HeroSecImages/label.jpg"
+import printer from "/src/assets/HeroSecImages/printer.jpg"
 
 export default function HeroSlider() {
   const slides = [
     {
-      image: "/src/assets/HeroSecImages/Tags.jpg",
+      image: tags,
       title: "Offset Printing",
       desc: "High-quality commercial prints",
     },
     {
-      image: "/src/assets/HeroSecImages/label.jpg",
+      image: label,
       title: "Label Design",
       desc: "Make your brand stand out",
     },
     {
-      image: "/src/assets/HeroSecImages/printer.jpg",
+      image: printer,
       title: "Inner Board Mastery",
       desc: "Sturdy and stylish solutions",
     },
