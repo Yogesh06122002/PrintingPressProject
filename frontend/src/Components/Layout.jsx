@@ -13,9 +13,9 @@ function Layout() {
         href="https://wa.me/9361011583" 
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white p-2 lg:p-3 rounded-full shadow-lg z-50"
+        className="fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white p-3 lg:p-3 rounded-full shadow-lg z-50"
       >
-        <FaWhatsapp size={28} />
+        <FaWhatsapp size={30} />
       </a>
     </div>
   );

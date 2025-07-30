@@ -104,7 +104,7 @@ const Header = () => {
         )}
 
         <div
-          className={`fixed top-[40px] lg:hidden left-0 h-[calc(100%-48px)] bg-white w-[60%] z-40 transform ${
+          className={`fixed py-[40px] top-0 lg:hidden left-0 h-[calc(100%-0px)] bg-white w-[60%] z-40 transform ${
             active ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-500 ease-in-out shadow-md`}
         >
