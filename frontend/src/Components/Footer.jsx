@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/HeaderImages/Logo.jpg";
+import logo from "../assets/HeaderImages/Sree Kalai Printing Press Logo.png";
 import iso from "../assets/FooterImages/iso.jpg";
 import ieko from "../assets/FooterImages/oeko tex.jpg";
 import gots from "../assets/FooterImages/gots.jpg";

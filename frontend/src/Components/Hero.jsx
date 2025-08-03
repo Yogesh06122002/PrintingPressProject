@@ -3,14 +3,14 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import tags from "/src/assets/HeroSecImages/Tags.jpg";
+import label_tag from "/src/assets/HeroSecImages/label_tag.jpg";
 import label from "/src/assets/HeroSecImages/label.jpg";
-import printer from "/src/assets/HeroSecImages/printer.jpg";
+import tapes from "/src/assets/HeroSecImages/tapes.jpg";
 
 export default function HeroSlider() {
   const slides = [
     {
-      image: tags,
+      image: label_tag,
       title: "Offset Printing",
       desc: "High-quality commercial prints",
     },
@@ -20,7 +20,7 @@ export default function HeroSlider() {
       desc: "Make your brand stand out",
     },
     {
-      image: printer,
+      image: tapes,
       title: "Inner Board Mastery",
       desc: "Sturdy and stylish solutions",
     },
@@ -33,7 +33,7 @@ export default function HeroSlider() {
       navigation
       pagination={{ clickable: true }}
       loop
-      className="w-full lg:h-[86vh] h-[50vh]"
+      className="w-full lg:h-[90vh] h-[50vh]"
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>

@@ -1,5 +1,5 @@
 import { MdMail } from "react-icons/md";
-import logo from "../assets/HeaderImages/Logo.jpg";
+import logo from "../assets/HeaderImages/Sree Kalai Printing Press Logo.png";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
@@ -9,6 +9,9 @@ import { MdMiscellaneousServices } from "react-icons/md";
 import { MdContactMail } from "react-icons/md";
 import { FaImages } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import iso from "../assets/FooterImages/iso.jpg";
+import ieko from "../assets/FooterImages/oeko tex.jpg";
+import gots from "../assets/FooterImages/gots.jpg";
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -32,11 +35,16 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className="flex md:justify-around justify-between relative md:py-2 px-4 md:px-0">
+      <div className="flex  justify-between relative py-2 px-4">
         <div className="w-15">
           <Link to="/">
             <img src={logo} alt="" className="w-[9rem]" />
           </Link>
+        </div>
+        <div className="flex gap-1">
+          <img src={ieko} alt="" className="w-22" />
+          <img src={iso} alt="" className="w-15 " />
+          <img src={gots} alt="" className="w-15 " />
         </div>
         <div className="lg:flex hidden text-base font-medium   w-[70%] gap-10 items-center justify-end">
           <NavLink
@@ -104,7 +112,7 @@ const Header = () => {
         )}
 
         <div
-          className={`fixed py-[40px] top-0 lg:hidden left-0 h-[calc(100%-0px)] bg-white w-[60%] z-40 transform ${
+          className={`fixed py-[40px] top-0 lg:hidden left-0 h-full bg-white w-[60%] z-40 transform ${
             active ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-500 ease-in-out shadow-md`}
         >
