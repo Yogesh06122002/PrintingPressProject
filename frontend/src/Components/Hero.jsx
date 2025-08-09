@@ -27,22 +27,27 @@ export default function HeroSlider() {
   ];
 
   return (
-    <Swiper
-      modules={[Autoplay, Navigation, Pagination]}
-      autoplay={{ delay: 4000 }}
-      navigation
-      pagination={{ clickable: true }}
-      loop
-      className="w-full lg:h-[90vh] h-[50vh]"
-    >
-      {slides.map((slide, index) => (
-        <SwiperSlide key={index}>
-          <div
-            className="w-full h-full bg-cover bg-center flex items-center justify-center text-white"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          ></div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <>
+      <Swiper
+        modules={[Autoplay, Navigation, Pagination]}
+        autoplay={{ delay: 4000 }}
+        navigation
+        pagination={{ clickable: true }}
+        loop
+        className="w-full lg:h-[90vh] h-[50vh]"
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div
+              className="w-full h-full bg-cover bg-center flex items-center justify-center text-white"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            ></div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <h1 className="text-center uppercase font-medium text-2xl md:text-3xl">
+        Cotton Printed Label & Woven Label Manufacturer At India
+      </h1>
+    </>
   );
 }

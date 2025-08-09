@@ -1,5 +1,5 @@
 import { MdMail } from "react-icons/md";
-import logo from "../assets/HeaderImages/Sree Kalai Printing Press Logo.png";
+import logo from "../assets/HeaderImages/Sree Kalai Printing Press Logo - Copy.png";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
@@ -36,9 +36,9 @@ const Header = () => {
         </div>
       </div>
       <div className="flex  justify-between relative py-2 px-4">
-        <div className="w-15">
+        <div>
           <Link to="/">
-            <img src={logo} alt="" className="w-[9rem]" />
+            <img src={logo} alt="" className="w-[8rem] h-auto  " />
           </Link>
         </div>
         <div className="flex gap-1">
@@ -46,7 +46,7 @@ const Header = () => {
           <img src={iso} alt="" className="w-15 " />
           <img src={gots} alt="" className="w-15 " />
         </div>
-        <div className="lg:flex hidden text-base font-medium   w-[70%] gap-10 items-center justify-end">
+        <div className="lg:flex hidden tracking-wide text-base font-medium   w-[70%] gap-10 items-center justify-end">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -117,15 +117,15 @@ const Header = () => {
           } transition-transform duration-500 ease-in-out shadow-md`}
         >
           <div className="flex justify-between items-center px-4 ">
-            <Link to="/" onClick={() => setActive(false)} className="w-15">
-              <img src={logo} alt="Logo" className="w-[4rem]" />
+            <Link to="/" onClick={() => setActive(false)} >
+              <img src={logo} alt="Logo" className="w-[8rem]" />
             </Link>
             <MdClose
               onClick={() => setActive(false)}
               className="text-2xl cursor-pointer text-[#00A183]"
             />
           </div>
-          <div className="flex flex-col gap-4 p-6 text-lg font-medium">
+          <div className="flex flex-col tracking-wider gap-4 p-6 text-lg font-medium">
             <NavLink
               to="/"
               onClick={() => setActive(false)}

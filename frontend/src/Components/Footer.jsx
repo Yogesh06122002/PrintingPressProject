@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/HeaderImages/Sree Kalai Printing Press Logo.png";
+import logo from "../assets/HeaderImages/Sree Kalai Printing Press Logo - Copy.png";
 import iso from "../assets/FooterImages/iso.jpg";
 import ieko from "../assets/FooterImages/oeko tex.jpg";
 import gots from "../assets/FooterImages/gots.jpg";
@@ -13,9 +13,9 @@ const Footer = () => {
     <div className="bg-[#00A183] py-10 lg:flex lg:justify-around items-center">
       <div>
         <div className="flex justify-center gap-10 items-center">
-          <div className="w-18">
+          <div className="">
             <Link to="/">
-              <img src={logo} alt="" />
+              <img src={logo} alt="" className="w-[6rem]" />
             </Link>
           </div>
           <div className="flex gap-1">
