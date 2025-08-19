@@ -3,12 +3,12 @@ import HomeProducts from "./HomeProducts";
 
 const OurProducts = () => {
   return (
-    <div>
+    <div className="mt-5">
       <h1 className="text-center tracking-wider text-[#00A183] font-medium text-2xl md:text-3xl">
         Discover Our Products
       </h1>
       <p className="text-center font-normal tracking-wider text-base text-gray-500">
-        Explore our best-selling and most interesting products
+        Explore our best-selling and  interesting products
         <br />
         You’re sure to find exactly what you need.
       </p>

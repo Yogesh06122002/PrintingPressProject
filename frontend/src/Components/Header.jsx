@@ -35,14 +35,14 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className="flex  justify-between relative py-2 px-4">
+      <div className="flex  justify-between relative py-1 px-2">
         <div>
           <Link to="/">
             <img src={logo} alt="" className="w-[8rem] h-auto  " />
           </Link>
         </div>
         <div className="flex gap-1">
-          <img src={ieko} alt="" className="w-22" />
+          <img src={ieko} alt="" className="w-15" />
           <img src={iso} alt="" className="w-15 " />
           <img src={gots} alt="" className="w-15 " />
         </div>
@@ -117,7 +117,7 @@ const Header = () => {
           } transition-transform duration-500 ease-in-out shadow-md`}
         >
           <div className="flex justify-between items-center px-4 ">
-            <Link to="/" onClick={() => setActive(false)} >
+            <Link to="/" onClick={() => setActive(false)}>
               <img src={logo} alt="Logo" className="w-[8rem]" />
             </Link>
             <MdClose
