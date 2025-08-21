@@ -17,7 +17,7 @@ export default function ProductGrid() {
         {allItems.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col  items-center transition-transform duration-300 hover:scale-105 rounded-lg shadow-xl/20 hover:shadow-xl/30 transition "
+            className="flex flex-col  items-center transition-transform duration-300 hover:scale-105 rounded-lg shadow-xl/20  transition "
           >
             {/* Product Image */}
             <img
@@ -30,10 +30,9 @@ export default function ProductGrid() {
             <p className="mt-2 text-center font-medium">{item.name}</p>
             {/* Read More Button */}
             <button
-              className="my-3 flex items-center gap-3 px-4 py-1.5 rounded text-white 
-                     bg-gradient-to-r from-[#00A183] to-green-600 
-                     shadow-md hover:shadow-lg transition-all duration-300 
-                     outline-none focus:outline-none"
+              className="my-3 px-4 py-1.5 flex items-center gap-3 text-white font-medium rounded 
+                     bg-gradient-to-r from-[#00A183] to-[#00c9a7] 
+                     shadow-md hover:shadow-lg transition-all duration-300 ease-in-out outline-none"
             >
               <FaCartShopping />
               <span>Read More</span>
