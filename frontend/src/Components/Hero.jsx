@@ -70,6 +70,17 @@ export default function HeroSlider() {
         .swiper-button-next:hover {
           background: rgba(0, 0, 0, 0.8);
         }
+
+        /* Custom pagination bullet color */
+        .swiper-pagination-bullet {
+          background: #00a183 !important; /* normal state */
+          opacity: 0.6;
+        }
+
+        .swiper-pagination-bullet-active {
+          background: #00a183 !important; /* active state */
+          opacity: 1;
+        }
       `}</style>
       <h1 className="text-center uppercase font-medium text-2xl md:text-3xl mt-5">
         Cotton Printed Label & Woven Label Manufacturer At India

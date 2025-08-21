@@ -9,9 +9,7 @@ import { MdMiscellaneousServices } from "react-icons/md";
 import { MdContactMail } from "react-icons/md";
 import { FaImages } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
-import iso from "../assets/FooterImages/iso.jpg";
 import ieko from "../assets/FooterImages/oeko tex.jpg";
-import gots from "../assets/FooterImages/gots.jpg";
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -36,15 +34,13 @@ const Header = () => {
         </div>
       </div>
       <div className="flex  justify-between relative py-1 px-2">
-        <div>
+        <div className="flex gap-10">
           <Link to="/">
             <img src={logo} alt="" className="w-[8rem] h-auto  " />
           </Link>
+        <div>
+          <img src={ieko} alt="" className="w-16" />
         </div>
-        <div className="flex gap-1">
-          <img src={ieko} alt="" className="w-15" />
-          <img src={iso} alt="" className="w-15 " />
-          <img src={gots} alt="" className="w-15 " />
         </div>
         <div className="lg:flex hidden tracking-wide text-base font-medium   w-[70%] gap-10 items-center justify-end">
           <NavLink

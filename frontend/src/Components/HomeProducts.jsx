@@ -1,6 +1,6 @@
 // src/components/ProductGrid.jsx
-import React from "react";
 import { Products } from "../Data/Products"; // adjust path to your file
+import { FaCartShopping } from "react-icons/fa6";
 
 export default function ProductGrid() {
   // Flatten all products into one array
@@ -13,26 +13,31 @@ export default function ProductGrid() {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4 gap-7">
         {allItems.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center border rounded-xl shadow hover:shadow-lg transition p-4"
+            className="flex flex-col  items-center transition-transform duration-300 hover:scale-105 rounded-lg shadow-xl/20 hover:shadow-xl/30 transition "
           >
             {/* Product Image */}
             <img
               src={item.images[0]}
               alt={item.name}
-              className="w-full h-48 object-cover rounded-lg"
+              className="w-full h-64 object-cover rounded-lg"
             />
-
-            {/* Read More Button */}
-            <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              Read More
-            </button>
 
             {/* Product Name */}
             <p className="mt-2 text-center font-medium">{item.name}</p>
+            {/* Read More Button */}
+            <button
+              className="my-3 flex items-center gap-3 px-4 py-1.5 rounded text-white 
+                     bg-gradient-to-r from-[#00A183] to-green-600 
+                     shadow-md hover:shadow-lg transition-all duration-300 
+                     outline-none focus:outline-none"
+            >
+              <FaCartShopping />
+              <span>Read More</span>
+            </button>
           </div>
         ))}
       </div>

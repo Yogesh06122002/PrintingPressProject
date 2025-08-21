@@ -1,9 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/HeaderImages/Sree Kalai Printing Press Logo - Copy.png";
-import iso from "../assets/FooterImages/iso.jpg";
 import ieko from "../assets/FooterImages/oeko tex.jpg";
-import gots from "../assets/FooterImages/gots.jpg";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
@@ -20,8 +18,6 @@ const Footer = () => {
           </div>
           <div className="flex gap-1">
             <img src={ieko} alt="" className="w-17 h-15" />
-            <img src={iso} alt="" className="w-15 h-15" />
-            <img src={gots} alt="" className="w-15 h-15" />
           </div>
         </div>
         <div className="flex gap-4  mt-5  justify-center">
