@@ -9,6 +9,7 @@ const ProductDetail = () => {
   const [productDtl, setProductDtl] = useState(null);
 
   useEffect(() => {
+     window.scrollTo(0, 0);
     let foundProduct = null;
     for (const categoryObj of Products) {
       const match = categoryObj.items.find(
