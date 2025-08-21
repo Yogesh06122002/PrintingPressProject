@@ -1,8 +1,10 @@
-// src/components/ProductGrid.jsx
-import { Products } from "../Data/Products"; // adjust path to your file
+import { Products } from "../Data/Products";
 import { FaCartShopping } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 export default function ProductGrid() {
+  const navigate = useNavigate();
+
   // Flatten all products into one array
   const allItems = Products.flatMap((category) => {
     if (category.category === "printedLabels") {
@@ -32,7 +34,10 @@ export default function ProductGrid() {
             <button
               className="my-3 px-4 py-1.5 flex items-center gap-3 text-white font-medium rounded 
                      bg-gradient-to-r from-[#00A183] to-[#00c9a7] 
-                     shadow-md hover:shadow-lg transition-all duration-300 ease-in-out outline-none"
+                     shadow-md hover:shadow-lg transition-all duration-300 ease-in-out outline-none cursor-pointer"
+              onClick={() => {
+                navigate(`/product/${item.name}`);
+              }}
             >
               <FaCartShopping />
               <span>Read More</span>

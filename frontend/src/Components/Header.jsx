@@ -15,10 +15,10 @@ const Header = () => {
   const [active, setActive] = useState(false);
 
   return (
-    <div>
+    <div className="sticky top-0 z-50">
       <div
         className="bg-[#00A183] text-white flex
-       text-center justify-between   p-2 lg:p-1 lg:px-2 "
+       text-center justify-between    p-2 lg:p-1 lg:px-2 "
       >
         <div className="flex items-center gap-2">
           <MdMail className="text-lg" />
@@ -33,14 +33,14 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className="flex  justify-between relative py-1 px-2">
-        <div className="flex gap-10">
+      <div className="flex  justify-between fixed py-1 px-2 sticky top-0 left-0  z-50 bg-white shadow-md">
+        <div className="flex gap-10 ">
           <Link to="/">
             <img src={logo} alt="" className="w-[8rem] h-auto  " />
           </Link>
-        <div>
-          <img src={ieko} alt="" className="w-16" />
-        </div>
+          <div>
+            <img src={ieko} alt="" className="w-16" />
+          </div>
         </div>
         <div className="lg:flex hidden tracking-wide text-base font-medium   w-[70%] gap-10 items-center justify-end">
           <NavLink
