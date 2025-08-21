@@ -9,7 +9,7 @@ const ProductDetail = () => {
   const [productDtl, setProductDtl] = useState(null);
 
   useEffect(() => {
-     window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     let foundProduct = null;
     for (const categoryObj of Products) {
       const match = categoryObj.items.find(
@@ -30,11 +30,11 @@ const ProductDetail = () => {
 
   return (
     <div className="lg:flex gap-x-10 mt-10 mb-20 lg:px-20 px-5">
-      <div className="border border-gray-300 lg:h-[600px] lg:w-[50%] flex justify-center">
+      <div className="border border-gray-300 lg:h-[600px] lg:w-[50%] flex justify-center rounded-lg">
         <img src={productDtl.images[0]} alt="" className="h-64 lg:h-full " />
       </div>
       <div className="lg:w-[50%] space-y-5">
-        <h1 className="text-3xl text-gray-800  font-semibold">
+        <h1 className="text-3xl text-gray-800  font-semibold lg:mt-0 mt-5">
           {productDtl.name}
         </h1>
         <h2 className="text-lg font-medium text-gray-500">
