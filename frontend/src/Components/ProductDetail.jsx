@@ -30,7 +30,7 @@ const ProductDetail = () => {
 
   return (
     <div className="lg:flex gap-x-10 mt-10 mb-20 lg:px-20 px-5">
-      <div className="border border-gray-300 lg:h-[600px] lg:w-[50%] flex justify-center rounded-lg">
+      <div className="border border-gray-300 lg:h-[600px] lg:w-[50%] flex justify-center ">
         <img src={productDtl.images[0]} alt="" className="h-64 lg:h-full " />
       </div>
       <div className="lg:w-[50%] space-y-5">
