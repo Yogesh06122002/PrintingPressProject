@@ -70,14 +70,24 @@ const Header = () => {
             ABOUT US
           </NavLink>
           <NavLink
-            to="/services"
+            to="/products"
             className={({ isActive }) =>
               `  ${
                 isActive ? "text-[#00A183]" : "text-black"
               } hover:text-[#00A183]`
             }
           >
-            SERVICES
+            PRODUCTS
+          </NavLink>
+          <NavLink
+            to="/infrastructure"
+            className={({ isActive }) =>
+              `  ${
+                isActive ? "text-[#00A183]" : "text-black"
+              } hover:text-[#00A183]`
+            }
+          >
+            INFRASTRUCTURE
           </NavLink>
           <NavLink
             to="/contact-us"
@@ -88,16 +98,6 @@ const Header = () => {
             }
           >
             CONTACT US
-          </NavLink>
-          <NavLink
-            to="/blogs"
-            className={({ isActive }) =>
-              `  ${
-                isActive ? "text-[#00A183]" : "text-black"
-              } hover:text-[#00A183]`
-            }
-          >
-            BLOGS
           </NavLink>
         </div>
         <div
@@ -143,7 +143,6 @@ const Header = () => {
             >
               <MdHome /> HOME
             </NavLink>
-
             <NavLink
               to="/about-us"
               onClick={() => setActive(false)}
@@ -155,9 +154,8 @@ const Header = () => {
             >
               <MdInfo /> ABOUT US
             </NavLink>
-
             <NavLink
-              to="/services"
+              to="/products"
               onClick={() => setActive(false)}
               className={({ isActive }) =>
                 `flex items-center gap-2 ${
@@ -165,9 +163,19 @@ const Header = () => {
                 } hover:text-[#00A183]`
               }
             >
-              <MdMiscellaneousServices /> SERVICES
+              <MdMiscellaneousServices /> PRODUCTS
             </NavLink>
-
+            <NavLink
+              to="/infrastructure"
+              onClick={() => setActive(false)}
+              className={({ isActive }) =>
+                `flex items-center gap-2 ${
+                  isActive ? "text-[#00A183]" : "text-black"
+                } hover:text-[#00A183]`
+              }
+            >
+              <FaImages /> INFRASTRUCTURE
+            </NavLink>
             <NavLink
               to="/contact-us"
               onClick={() => setActive(false)}
@@ -178,18 +186,6 @@ const Header = () => {
               }
             >
               <MdContactMail /> CONTACT US
-            </NavLink>
-
-            <NavLink
-              to="/blogs"
-              onClick={() => setActive(false)}
-              className={({ isActive }) =>
-                `flex items-center gap-2 ${
-                  isActive ? "text-[#00A183]" : "text-black"
-                } hover:text-[#00A183]`
-              }
-            >
-              <FaImages /> BLOGS
             </NavLink>
           </div>
         </div>

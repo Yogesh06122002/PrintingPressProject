@@ -2,7 +2,7 @@ import { Products } from "../Data/Products";
 import { FaCartShopping } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
-export default function ProductGrid() {
+export default function HomeProducts() {
   const navigate = useNavigate();
 
   // Flatten all products into one array
