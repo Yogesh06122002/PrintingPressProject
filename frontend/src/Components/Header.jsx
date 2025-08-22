@@ -1,5 +1,4 @@
 import { MdMail } from "react-icons/md";
-import logo from "../assets/HeaderImages/Sree Kalai Printing Press Logo - Copy.png";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
@@ -9,7 +8,6 @@ import { MdMiscellaneousServices } from "react-icons/md";
 import { MdContactMail } from "react-icons/md";
 import { FaImages } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
-import ieko from "../assets/FooterImages/oeko tex.jpg";
 
 const Header = () => {
   const [active, setActive] = useState(false);
@@ -36,10 +34,18 @@ const Header = () => {
       <div className="flex  justify-between fixed py-1 px-2 sticky top-0 left-0  z-50 bg-white shadow-md">
         <div className="flex gap-10 ">
           <Link to="/">
-            <img src={logo} alt="" className="w-[8rem] h-auto  " />
+            <img
+              src="/images/BannersImg/Sree Kalai Printing Press Logo.png"
+              alt="Sree Kalai Printing Press Logo"
+              className="w-[8rem] h-auto  "
+            />
           </Link>
           <div>
-            <img src={ieko} alt="" className="w-16" />
+            <img
+              src="/images/BannersImg/oeko tex.jpg"
+              alt="oeko tex"
+              className="w-16"
+            />
           </div>
         </div>
         <div className="lg:flex hidden tracking-wide text-base font-medium   w-[70%] gap-10 items-center justify-end">
@@ -114,7 +120,11 @@ const Header = () => {
         >
           <div className="flex justify-between items-center px-4 ">
             <Link to="/" onClick={() => setActive(false)}>
-              <img src={logo} alt="Logo" className="w-[8rem]" />
+              <img
+                src="/images/BannersImg/Sree Kalai Printing Press Logo.png"
+                alt="Sree Kalai Printing Press Logo"
+                className="w-[8rem]"
+              />
             </Link>
             <MdClose
               onClick={() => setActive(false)}

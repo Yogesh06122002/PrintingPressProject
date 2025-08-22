@@ -1,10 +1,4 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/HeaderImages/Sree Kalai Printing Press Logo - Copy.png";
-import ieko from "../assets/FooterImages/oeko tex.jpg";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -13,14 +7,22 @@ const Footer = () => {
         <div className="flex justify-center gap-10 items-center">
           <div className="">
             <Link to="/">
-              <img src={logo} alt="" className="w-[6rem]" />
+              <img
+                src="/images/BannersImg/Sree Kalai Printing Press Logo.png"
+                alt="Sree Kalai Printing Press Logo"
+                className="w-[6rem]"
+              />
             </Link>
           </div>
           <div className="flex gap-1">
-            <img src={ieko} alt="" className="w-17 h-15" />
+            <img
+              src="/images/BannersImg/oeko tex.jpg"
+              alt="oeko tex"
+              className="w-17 h-15"
+            />
           </div>
         </div>
-        <div className="flex gap-4  mt-5  justify-center">
+        {/* <div className="flex gap-4  mt-5  justify-center">
           <button className="border-[1px] p-1 border-white text-white cursor-pointer  rounded-full  hover:bg-white hover:text-[#00A183]">
             <FaFacebookF className="text-xl" />
           </button>
@@ -30,7 +32,7 @@ const Footer = () => {
           <button className="border-[1px] p-1 border-white text-white cursor-pointer  border-[#23272B] rounded-full hover:bg-white hover:text-[#00A183]">
             <FaYoutube className="text-xl" />
           </button>
-        </div>
+        </div> */}
       </div>
       <div className="text-white m-5 lg:m-0">
         <div className="font-bold text-2xl tracking-wide italic  ">

@@ -34,7 +34,7 @@ const OurProducts = () => {
           strict quality checks at every stage.
         </p>
       </div>
-      <h1 className="text-center tracking-wider text-[#00A183] font-medium text-2xl md:text-3xl">
+      <h1 className="text-center tracking-wider text-[#10572F] font-medium text-2xl md:text-3xl mt-5">
         Discover Our Products
       </h1>
       <p className="text-center font-normal tracking-wider text-base text-gray-500">
