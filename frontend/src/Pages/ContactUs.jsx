@@ -7,12 +7,12 @@ const ContactUs = () => {
   return (
     <div>
       <div>
-        <img src="/public/images/BannersImg/ContactUs.jpg" className="w-full" />
+        <img src="/images/BannersImg/ContactUs.jpg" className="w-full" />
       </div>
       <div className="lg:flex items-center gap-10 m-10">
         <div className="w-full lg:w-1/2 space-y-5">
           <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
-          <div className="flex justify-between items-center lg:w-[35%] w-[55%]">
+          <div className="flex  items-center gap-10">
             <FaUser className="bg-[#00A183] text-white p-1 text-4xl rounded-full" />
             <div>
               <h1 className="text-[#00A183] font-medium text-lg">Director</h1>
@@ -21,7 +21,7 @@ const ContactUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex  justify-between items-center lg:w-[48%] w-[76%]">
+          <div className="flex   items-center gap-10">
             <HiMiniUserGroup className="bg-[#00A183] text-white p-1 text-4xl rounded-full" />
             <div>
               <h1 className="text-[#00A183] font-medium text-lg">
@@ -32,7 +32,7 @@ const ContactUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex  justify-between items-center lg:w-[44%] w-[70%]">
+          <div className="flex   items-center gap-10">
             <FaLocationDot className="bg-[#00A183] text-white p-1 text-4xl rounded-full" />
             <div>
               <h1 className="text-[#00A183] font-medium text-lg">Address</h1>
@@ -42,7 +42,7 @@ const ContactUs = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify-between items-center lg:w-[39%] w-[62%]">
+          <div className="flex  items-center gap-10">
             <MdEmail className="bg-[#00A183] text-white p-1 text-4xl rounded-full" />
             <div>
               <h1 className="text-[#00A183] font-medium text-lg">
