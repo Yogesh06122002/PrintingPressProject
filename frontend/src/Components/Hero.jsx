@@ -7,15 +7,15 @@ import "swiper/css/pagination";
 export default function HeroSlider() {
   const slides = [
     {
-      image: "/public/images/HeroSecImages/label_tag.png",
+      image: "/images/HeroSecImages/label_tag.png",
       desc: "High-quality commercial prints",
     },
     {
-      image: "/public/images/HeroSecImages/label.jpg",
+      image: "/images/HeroSecImages/label.jpg",
       desc: "Make your brand stand out",
     },
     {
-      image: "/public/images/HeroSecImages/tapes.jpeg",
+      image: "/images/HeroSecImages/tapes.jpeg",
       desc: "Sturdy and stylish solutions",
     },
   ];
