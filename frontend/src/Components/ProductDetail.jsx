@@ -50,7 +50,14 @@ const ProductDetail = () => {
                              shadow-md hover:shadow-lg transition-all duration-300 ease-in-out outline-none cursor-pointer"
         >
           <MdOutlineEditCalendar />
-          <span>Enquiry</span>
+          <span>
+            <a
+              href="mailto:kalaiprinting@gmail.com"
+              className="hover:pointer"
+            >
+              Enquiry
+            </a>
+          </span>
         </button>
       </div>
     </div>

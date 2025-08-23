@@ -18,6 +18,9 @@ export default function HeroSlider() {
       image: "/images/HeroSecImages/tapes.jpeg",
       desc: "Sturdy and stylish solutions",
     },
+    {
+      image: "/images/HeroSecImages/board.jpg",
+    },
   ];
 
   return (
