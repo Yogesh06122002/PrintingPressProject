@@ -1,5 +1,5 @@
 import { MdMail } from "react-icons/md";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
 import { MdHome } from "react-icons/md";
@@ -8,9 +8,23 @@ import { MdMiscellaneousServices } from "react-icons/md";
 import { MdContactMail } from "react-icons/md";
 import { FaImages } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { Products } from "../Data/Products";
 
 const Header = () => {
   const [active, setActive] = useState(false);
+  const [openCategory, setOpenCategory] = useState(null);
+  const [openSubCategory, setOpenSubCategory] = useState(null);
+  const navigate = useNavigate();
+
+  const toggleCategory = (category) => {
+    setOpenCategory(openCategory === category ? null : category);
+    setOpenSubCategory(null);
+  };
+
+  const toggleSubCategory = (sub) => {
+    setOpenSubCategory(openSubCategory === sub ? null : sub);
+  };
 
   return (
     <div className="sticky top-0 z-50">
@@ -114,7 +128,7 @@ const Header = () => {
         )}
 
         <div
-          className={`fixed py-[40px] top-0 lg:hidden left-0 h-full bg-white w-[60%] z-40 transform ${
+          className={`fixed py-[40px] top-0 lg:hidden left-0 h-full bg-white w-[80%] z-40 transform ${
             active ? "translate-x-0" : "-translate-x-full"
           } transition-transform duration-500 ease-in-out shadow-md`}
         >
@@ -154,17 +168,69 @@ const Header = () => {
             >
               <MdInfo /> ABOUT US
             </NavLink>
-            <NavLink
-              to="/products"
-              onClick={() => setActive(false)}
-              className={({ isActive }) =>
-                `flex items-center gap-2 ${
-                  isActive ? "text-[#00A183]" : "text-black"
-                } hover:text-[#00A183]`
-              }
-            >
-              <MdMiscellaneousServices /> PRODUCTS
-            </NavLink>
+            <div>
+              <div
+                className="flex items-center gap-2 cursor-pointer hover:text-[#00A183]"
+                onClick={() => {
+                  navigate("/products");
+                  setActive(false);
+                }}
+              >
+                <MdMiscellaneousServices /> PRODUCTS
+                <span
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleCategory("products");
+                  }}
+                  className="ml-auto"
+                >
+                  {openCategory === "products" ? (
+                    <IoIosArrowUp />
+                  ) : (
+                    <IoIosArrowDown />
+                  )}
+                </span>
+              </div>
+
+              {/* Show subcategories */}
+              {openCategory === "products" && (
+                <div className="ml-6 mt-2 flex flex-col gap-2 text-base">
+                  {Products.map((category) => (
+                    <div key={category.category}>
+                      <div
+                        className="flex items-center justify-between cursor-pointer hover:text-[#00A183]"
+                        onClick={() => toggleSubCategory(category.category)}
+                      >
+                        {category.category}
+                        {openSubCategory === category.category ? (
+                          <IoIosArrowUp />
+                        ) : (
+                          <IoIosArrowDown />
+                        )}
+                      </div>
+
+                      {/* Show items under category */}
+                      {openSubCategory === category.category && (
+                        <div className="ml-4 mt-1 flex flex-col gap-1 text-sm">
+                          {category.items.map((item) => (
+                            <div
+                              key={item.id}
+                              className="cursor-pointer hover:text-[#00A183]"
+                              onClick={() => {
+                                navigate(`/product/${item.name}`);
+                                setActive(false);
+                              }}
+                            >
+                              {item.name}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
             <NavLink
               to="/infrastructure"
               onClick={() => setActive(false)}
