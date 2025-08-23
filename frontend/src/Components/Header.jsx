@@ -212,15 +212,16 @@ const Header = () => {
                       {/* Show items under category */}
                       {openSubCategory === category.category && (
                         <div className="ml-4 mt-1 flex flex-col gap-1 text-sm">
-                          {category.items.map((item) => (
+                          {category.items.map((item, index) => (
                             <div
                               key={item.id}
-                              className="cursor-pointer hover:text-[#00A183]"
+                              className="cursor-pointer hover:text-[#00A183] my-2"
                               onClick={() => {
                                 navigate(`/product/${item.name}`);
                                 setActive(false);
                               }}
                             >
+                              {index + 1}.
                               {item.name}
                             </div>
                           ))}
