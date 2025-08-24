@@ -3,7 +3,7 @@ import HomeProducts from "../Components/HomeProducts";
 const Products = () => {
   return (
     <div>
-      <HomeProducts />
+      <HomeProducts isProductPagee={true} />
     </div>
   );
 };

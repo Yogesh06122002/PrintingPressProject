@@ -2,13 +2,15 @@ import { Products } from "../Data/Products";
 import { FaCartShopping } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
-export default function HomeProducts() {
+export default function HomeProducts({ isProductPagee }) {
   const navigate = useNavigate();
 
   // Flatten all products into one array
   const allItems = Products.flatMap((category) => {
-    if (category.category === "printedLabels") {
-      return category.items.slice(0, 2); // only first 2 for printedLabels
+    if (!isProductPagee) {
+      if (category.category === "Printed Labels") {
+        return category.items.slice(0, 2); // only first 2 for printedLabels
+      }
     }
     return category.items;
   });
@@ -24,7 +26,7 @@ export default function HomeProducts() {
             {/* Product Image */}
             <img
               src={item.images[0]}
-              alt={item.name}
+              alt={item.alt}
               className="w-full h-64 object-cover rounded-lg"
             />
 

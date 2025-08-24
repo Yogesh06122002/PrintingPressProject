@@ -31,7 +31,11 @@ const ProductDetail = () => {
   return (
     <div className="lg:flex gap-x-10 mt-10 mb-20 lg:px-20 px-5">
       <div className="border border-gray-300 lg:h-[600px] lg:w-[50%] flex justify-center ">
-        <img src={productDtl.images[0]} alt="" className="h-64 lg:h-full " />
+        <img
+          src={productDtl.images[0]}
+          alt={productDtl.alt}
+          className="h-64 lg:h-full "
+        />
       </div>
       <div className="lg:w-[50%] space-y-5">
         <h1 className="text-3xl text-gray-800  font-semibold lg:mt-0 mt-5">
@@ -51,10 +55,7 @@ const ProductDetail = () => {
         >
           <MdOutlineEditCalendar />
           <span>
-            <a
-              href="mailto:kalaiprinting@gmail.com"
-              className="hover:pointer"
-            >
+            <a href="mailto:kalaiprinting@gmail.com" className="hover:pointer">
               Enquiry
             </a>
           </span>
