@@ -49,7 +49,7 @@ const Header = () => {
         <div className="flex gap-10 ">
           <Link to="/">
             <img
-              src="/images/BannersImg/Sree Kalai Printing Press Logo.png"
+              src="/images/BannersImg/SK_Logo.png"
               alt="Sree Kalai Printing Press Logo"
               className="w-[8rem] h-auto  "
             />
@@ -135,7 +135,7 @@ const Header = () => {
           <div className="flex justify-between items-center px-4 ">
             <Link to="/" onClick={() => setActive(false)}>
               <img
-                src="/images/BannersImg/Sree Kalai Printing Press Logo.png"
+                src="/images/BannersImg/SK_Logo.png"
                 alt="Sree Kalai Printing Press Logo"
                 className="w-[8rem]"
               />

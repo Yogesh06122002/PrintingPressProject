@@ -26,7 +26,7 @@ export default function HeroSlider() {
       image: "/images/HeroSecImages/board.jpg",
     },
     {
-      image:"/public/images/HeroSecImages/BarcodeImg.png"
+      image:"/images/HeroSecImages/BarcodeImg.png"
     }
   ];
 

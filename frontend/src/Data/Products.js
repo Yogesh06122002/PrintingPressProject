@@ -4,7 +4,7 @@ export const Products = [
     items: [
       {
         name: "Hangtag (FSC)",
-        images: ["/images/HangTagImg/Hangtag (FSC).png"],
+        images: ["/images/HangTagImg/hangTag.jpg"],
         id: 9,
         alt: "Hangtag (FSC)",
         disc: "We are providing an extensive range of Hang Tags and we offer tags in various colors, shapes, sizes as per the specifications of clients. The complete range of tag is properly manufactured according to the customer’s requirements under the strict direction of accomplished personnel by using material & latest technology.",
@@ -34,6 +34,13 @@ export const Products = [
         id: 19,
         alt: "Inner Board",
         disc: "We offer our clients an excellent quality range of  Inner Frame Boards, manufactured using high-grade raw materials to ensure durability and superior finish. These boards are designed to meet various industrial and packaging needs and are available at highly competitive rates.",
+      },
+      {
+        name: "Garments Packing Box",
+        images: ["/images/CardsImg/MetalBox-2.jpeg"],
+        id: 19,
+        alt: "Garments Packing Box",
+        disc: "We are providing to our valued customers a fine range of Packaging boxes. these are manufactured with high grade raw material and therefore have good carrying and load bearing capacities. this is available in varied sizes and designs. this is more durable and compatible in nature and also demanded in domestic market. Customers can easily avail this from the market at attractive prices.",
       },
     ],
   },
