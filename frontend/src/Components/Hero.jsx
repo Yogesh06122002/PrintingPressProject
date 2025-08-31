@@ -7,20 +7,27 @@ import "swiper/css/pagination";
 export default function HeroSlider() {
   const slides = [
     {
-      image: "/images/HeroSecImages/label_tag.png",
-      desc: "High-quality commercial prints",
-    },
-    {
       image: "/images/HeroSecImages/label.jpg",
       desc: "Make your brand stand out",
     },
     {
-      image: "/images/HeroSecImages/tapes.jpeg",
+      image:"/images/CardsImg/PhotoCard.jpg",
+      desc:"",
+    },
+    {
+      image: "/images/HeroSecImages/label_tag.png",
+      desc: "High-quality commercial prints",
+    },
+    {
+      image: "/images/HeroSecImages/MetalBox.jpeg",
       desc: "Sturdy and stylish solutions",
     },
     {
       image: "/images/HeroSecImages/board.jpg",
     },
+    {
+      image:"/public/images/HeroSecImages/BarcodeImg.png"
+    }
   ];
 
   return (

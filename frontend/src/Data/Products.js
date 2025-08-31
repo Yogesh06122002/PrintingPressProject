@@ -1,5 +1,43 @@
 export const Products = [
   {
+    category: "Hang Tag",
+    items: [
+      {
+        name: "Hangtag (FSC)",
+        images: ["/images/HangTagImg/Hangtag (FSC).png"],
+        id: 9,
+        alt: "Hangtag (FSC)",
+        disc: "We are providing an extensive range of Hang Tags and we offer tags in various colors, shapes, sizes as per the specifications of clients. The complete range of tag is properly manufactured according to the customer’s requirements under the strict direction of accomplished personnel by using material & latest technology.",
+      },
+      {
+        name: "Recycling Tag",
+        images: ["/images/HangTagImg/Recycling Tag.jpg"],
+        id: 10,
+        alt: "Recycling Tag",
+        disc: "Be Eco-Friendly with Recycled Hang Tags.We are providing with Recycled Hang Tags and we offer tags  in various shapes and  sizes as per the specifications of clients. The complete range of tag is properly manufactured according to the customer’s requirements under the strict direction of our team. Our Recycled tags are offered to the customers at cost effective rates.",
+      },
+    ],
+  },
+  {
+    category: "Photo Card/Inner Board",
+    items: [
+      {
+        name: "Photo Card",
+        images: ["/images/CardsImg/PhotoCard.jpg"],
+        id: 18,
+        alt: "Photo Card",
+        disc: "Our Photocards are specially designed to enhance the presentation and branding while ensuring durability and functionality. With vibrant visuals and clear product details, these photocards not only elevate the unboxing experience but also serve as a reliable tool for product identification.",
+      },
+      {
+        name: "Inner Board",
+        images: ["/images/HeroSecImages/board.jpg"],
+        id: 19,
+        alt: "Inner Board",
+        disc: "We offer our clients an excellent quality range of  Inner Frame Boards, manufactured using high-grade raw materials to ensure durability and superior finish. These boards are designed to meet various industrial and packaging needs and are available at highly competitive rates.",
+      },
+    ],
+  },
+  {
     category: "Printed Labels",
     items: [
       {
@@ -15,13 +53,6 @@ export const Products = [
         id: 13,
         alt: "Viscose Printed Label and Tapes",
         disc: "Viscose is a type of rayon fiber that is made from natural sources such as wood and agricultural products that are regenerated as cellulose fiber.We are providing an extensive range of Viscose printed labels and tapes with good quality standard and we offer Labels in various Printing colors, shapes, sizes and designs as per the specifications of clients. The complete range of Labels is properly manufactured as per their needs and requirements under the strict direction of our team. Our labels are offered to the customers at cost effective rates.",
-      },
-      {
-        name: "Reflecting Printed Label",
-        images: ["/images/PrintedLabelsImg/reflectingPrintedLabel.jpg"],
-        id: 14,
-        alt: "Reflecting Printed Label",
-        disc: "We are providing an extensive range of Reflective printed labels with good quality standard and we offer Labels in various Printing colors, shapes, sizes and designs as per the specifications of clients. The complete range of Labels is properly manufactured as per their needs and requirements under the strict direction of our team. Our labels are offered to the customers at cost effective rates.",
       },
       {
         name: "Poly-Cotton Printed Label",
@@ -63,13 +94,6 @@ export const Products = [
         alt: "Polyster Woven Label",
         disc: "Woven labels are typically 100% polyester. It is the type of weave, and the thickness of the threads (“denier” or “thread count”) that determine the look and feel. Woven labels are generally made with a damask weave, satin weave, or a taffeta weave. Woven recycled polyester labels are available in up to 40 colours (maximum 8 colours per label) in a wide variety of sizes, folds and finishing options. Our labels are offered to the customers at cost effective rates.",
       },
-      {
-        name: "Recycling Polyster Woven Label",
-        images: ["/images/WovenLabelsImg/Recycling Polyster Woven Label.jpg"],
-        id: 4,
-        alt: "Recycling Polyster Woven Label",
-        disc: "Woven labels are typically 100% Recycled polyester. It is the type of weave, and the thickness of the threads (“denier” or “thread count”) that determine the look and feel. Woven labels are generally made with a damask weave, satin weave, or a taffeta weave.We are providing an extensive range of Recycled Woven labels with good quality standard and we offer Labels in various Printing colors, shapes, sizes and designs as per the specifications of clients. The complete range of Labels is properly manufactured as per their needs and requirements under the strict direction of our team. Our labels are offered to the customers at cost effective rates.",
-      },
     ],
   },
   {
@@ -106,40 +130,21 @@ export const Products = [
     ],
   },
   {
-    category: "Hang Tag",
-    items: [
-      {
-        name: "Hangtag (FSC)",
-        images: ["/images/HangTagImg/Hangtag (FSC).png"],
-        id: 9,
-        alt: "Hangtag (FSC)",
-        disc: "We are providing an extensive range of Hang Tags and we offer tags in various colors, shapes, sizes as per the specifications of clients. The complete range of tag is properly manufactured according to the customer’s requirements under the strict direction of accomplished personnel by using material & latest technology.",
-      },
-      {
-        name: "Recycling Tag",
-        images: ["/images/HangTagImg/Recycling Tag.jpg"],
-        id: 10,
-        alt: "Recycling Tag",
-        disc: "Be Eco-Friendly with Recycled Hang Tags.We are providing with Recycled Hang Tags and we offer tags  in various shapes and  sizes as per the specifications of clients. The complete range of tag is properly manufactured according to the customer’s requirements under the strict direction of our team. Our Recycled tags are offered to the customers at cost effective rates.",
-      },
-    ],
-  },
-  {
     category: "Stickers",
     items: [
-      {
-        name: "Heat Transfer Stickers",
-        images: ["/images/StickersImg/Heat Transfer Stickers.jpg"],
-        id: 11,
-        alt: "Heat Transfer Stickers",
-        disc: "Transfer Stickers have seen a huge spike in demand. Mainly because of the fact that they do not cause irritation and discomfort while wearing, they have been used in size labeling immensely. Our transfer stickers are manufactured using 100% PVC and Phthalate free inks. We use automatic machines that give consistent ink densities and finish throughout the batch.We are providing an extensive range of Transfer stickers with good quality standards and we offer various Printing colors, shapes, sizes, and designs as per the specifications of clients. The complete range of transfer stickers is properly manufactured as per their needs and requirements under the strict direction of our team. Our products are offered to the customers at cost-effective rates.",
-      },
       {
         name: "Barcode Stickers",
         images: ["/images/StickersImg/Barcode Stickers.jpg"],
         id: 12,
         alt: "Barcode Stickers",
         disc: "We are providing an extensive range of stickers with good quality standard and we offer in various Printing colors, shapes, sizes and designs as per the specifications of clients. The complete range of stickers is properly manufactured as per their needs and requirements under the strict direction of our team. Our products are offered to the customers at cost effective rates.",
+      },
+      {
+        name: "Heat Transfer Stickers",
+        images: ["/images/StickersImg/Heat Transfer Stickers.jpg"],
+        id: 11,
+        alt: "Heat Transfer Stickers",
+        disc: "Transfer Stickers have seen a huge spike in demand. Mainly because of the fact that they do not cause irritation and discomfort while wearing, they have been used in size labeling immensely. Our transfer stickers are manufactured using 100% PVC and Phthalate free inks. We use automatic machines that give consistent ink densities and finish throughout the batch.We are providing an extensive range of Transfer stickers with good quality standards and we offer various Printing colors, shapes, sizes, and designs as per the specifications of clients. The complete range of transfer stickers is properly manufactured as per their needs and requirements under the strict direction of our team. Our products are offered to the customers at cost-effective rates.",
       },
     ],
   },

@@ -2,33 +2,47 @@ const AboutUs = () => {
   return (
     <div>
       <div>
-        <img src="/images/BannersImg/aboutUs.jpg" className="w-full " />
+        <img src="/images/BannersImg/AboutUsOwner.jpeg" className="w-full " />
       </div>
       <div className="bg-[#EBF7ED] py-10 px-5">
         <h1 className="text-center font-bold text-3xl  text-[#10572F]">
           About Us
         </h1>
-        <p className="text-center font-medium text-xl leading-10 ">
-          We are experience in the printing field Since 1977.
-          <br />
-          We are always buy only Oeko tex certified Dies, Roll Material Satin &
-          Taffetta.
-          <br />
-          We are making the label block ultra sonic process material plate use
-          the printing for PHD & Fastness purpose.
-          <br />
-          We use the FSC Certified board, Recycled Board Tested Stickers &
-          Coated inner Board, Tissue Papers, Papers Purchase from direct dealer
-          for quality purpose.
-          <br />
-          Label Printed & filter the mistake, cutting and final check the pack
-          per day capacity double side print with cutting 3.5 Lakhs, Center fold
-          long length label 2 Lakhs per day <br />
-          Size Tag printed die cut with check the pack 2 Lakhs per day
-          <br />
-          Photo Card, Metal Box depends upon the size capacity Our factory
-          approved the audit from (OEKO TEX STANDARD 100) office.
-        </p>
+        <ul className="text-left font-medium text-xl leading-10 max-w-4xl mx-auto  list-disc list-outside pl-6">
+          <li>
+            We are experienced in the printing field{" "}
+            <span className="text-red-600">since 1977.</span>
+          </li>
+          <li>
+            We always buy only Oeko Tex certified dyes, roll material satin &
+            taffeta.
+          </li>
+          <li>
+            We make label blocks using ultrasonic process material plates for{" "}
+            <span className="text-green-700">PHD & fastness</span> purpose.
+          </li>
+          <li>
+            We use the <span className="text-red-600">FSC</span> certified
+            Board,<span className="text-red-600">Recycled</span> board,
+            <span className="text-red-600">Tested</span> stickers & coated inner
+            board, tissue papers, and papers purchased directly from dealers for
+            quality assurance.
+          </li>
+          <li>
+            Label printing includes mistake filtering, cutting, and final
+            checks. Daily capacity: 3.5 lakhs double-side print with cutting.
+          </li>
+          <li>Center fold long length label capacity: 2 lakhs per day.</li>
+          <li>
+            Size tags printed, die cut, checked, and packed: 2 lakhs per day.
+          </li>
+          <li>
+            Photo cards and metal box production depend upon size capacity.
+          </li>
+          <li>
+            Our factory is approved by audit from OEKO TEX STANDARD 100 office.
+          </li>
+        </ul>
       </div>
       <div className="lg:flex items-center my-10">
         <div className="w-full lg:w-1/2 flex justify-center">
@@ -42,7 +56,7 @@ const AboutUs = () => {
           <h1 className="text-center font-bold text-2xl mt-10 text-[#10572F]">
             Why Choose us
           </h1>
-          <p className=" text-base font-medium leading-7 text-gray-800 mt-5">
+          <p className=" text-xl font-medium leading-10 text-gray-800 mt-5">
             We specialize in manufacturing and supplying a wide range of garment
             labels available in different colors, sizes, and shapes — from
             concept design to the finished product.
